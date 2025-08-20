@@ -1,0 +1,112 @@
+Running tests with SKLEARN framework
+============================================================
+ target column: 'class' (last column)
+Original dataset info:
+Shape: (8124, 23)
+Columns: ['cap-shape', 'cap-surface', 'cap-color', 'bruises', 'odor', 'gill-attachment', 'gill-spacing', 'gill-size', 'gill-color', 'stalk-shape', 'stalk-root', 'stalk-surface-above-ring', 'stalk-surface-below-ring', 'stalk-color-above-ring', 'stalk-color-below-ring', 'veil-type', 'veil-color', 'ring-number', 'ring-type', 'spore-print-color', 'population', 'habitat', 'class']
+
+First few rows:
+
+cap-shape: ['x' 'b' 's' 'f' 'k'] -> [5 0 4 2 3]
+
+cap-surface: ['s' 'y' 'f' 'g'] -> [2 3 0 1]
+
+cap-color: ['n' 'y' 'w' 'g' 'e'] -> [4 9 8 3 2]
+
+class: ['p' 'e'] -> [1 0]
+
+Processed dataset shape: (8124, 23)
+Number of features: 22
+Features: ['cap-shape', 'cap-surface', 'cap-color', 'bruises', 'odor', 'gill-attachment', 'gill-spacing', 'gill-size', 'gill-color', 'stalk-shape', 'stalk-root', 'stalk-surface-above-ring', 'stalk-surface-below-ring', 'stalk-color-above-ring', 'stalk-color-below-ring', 'veil-type', 'veil-color', 'ring-number', 'ring-type', 'spore-print-color', 'population', 'habitat']
+Target: class
+Framework: SKLEARN
+Data type: <class 'numpy.ndarray'>
+
+============================================================
+DECISION TREE CONSTRUCTION DEMO
+============================================================
+Total samples: 8124
+Training samples: 6499
+Testing samples: 1625
+
+Constructing decision tree using training data...
+
+🌳 Decision tree construction completed using SKLEARN!
+
+🌲 DECISION TREE STRUCTURE
+============================================================
+Root [odor] (gain: 0.9048)
+├── = 0:
+│   ├── Class 0
+├── = 1:
+│   ├── Class 1
+├── = 2:
+│   ├── Class 1
+├── = 3:
+│   ├── Class 0
+├── = 4:
+│   ├── Class 1
+├── = 5:
+│   ├── [spore-print-color] (gain: 0.1487)
+│   ├── = 0:
+│   │   ├── Class 0
+│   ├── = 1:
+│   │   ├── Class 0
+│   ├── = 2:
+│   │   ├── Class 0
+│   ├── = 3:
+│   │   ├── Class 0
+│   ├── = 4:
+│   │   ├── Class 0
+│   ├── = 5:
+│   │   ├── Class 1
+│   ├── = 7:
+│   │   ├── [habitat] (gain: 0.2767)
+│   │   ├── = 0:
+│   │   │   ├── [gill-size] (gain: 0.6374)
+│   │   │   ├── = 0:
+│   │   │   │   ├── Class 0
+│   │   │   └── = 1:
+│   │   │       ├── Class 1
+│   │   ├── = 1:
+│   │   │   ├── Class 0
+│   │   ├── = 2:
+│   │   │   ├── [cap-color] (gain: 0.8267)
+│   │   │   ├── = 1:
+│   │   │   │   ├── Class 0
+│   │   │   ├── = 4:
+│   │   │   │   ├── Class 0
+│   │   │   ├── = 8:
+│   │   │   │   ├── Class 1
+│   │   │   └── = 9:
+│   │   │       ├── Class 1
+│   │   ├── = 4:
+│   │   │   ├── Class 0
+│   │   └── = 6:
+│   │       ├── Class 0
+│   └── = 8:
+│       ├── Class 0
+├── = 6:
+│   ├── Class 1
+├── = 7:
+│   ├── Class 1
+├── = 8:
+│   ├── Class 1
+
+
+📊 OVERALL PERFORMANCE METRICS
+========================================
+Accuracy:             1.0000 (100.00%)
+Precision (weighted): 1.0000
+Recall (weighted):    1.0000
+F1-Score (weighted):  1.0000
+Precision (macro):    1.0000
+Recall (macro):       1.0000
+F1-Score (macro):     1.0000
+
+🌳 TREE COMPLEXITY METRICS
+========================================
+Maximum Depth:        4
+Total Nodes:          29
+Leaf Nodes:           24
+Internal Nodes:       5
