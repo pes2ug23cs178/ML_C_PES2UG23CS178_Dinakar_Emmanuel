@@ -24,7 +24,7 @@ The project uses the **Ryerson Audio-Visual Database of Emotional Speech and Son
 - **Emotions (8):** Neutral, Calm, Happy, Sad, Angry, Fearful, Disgust, Surprised.
 - **Train/Test Split:** A speaker-independent split was used, with 20 actors for training and 4 actors for testing.
 
-You can download the dataset from https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio. You will need the "Audio_Speech_Actors_01-24.zip" file.
+You can download the datasets from https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio and https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-song-audio.
 
 ## Installation and Setup
 
