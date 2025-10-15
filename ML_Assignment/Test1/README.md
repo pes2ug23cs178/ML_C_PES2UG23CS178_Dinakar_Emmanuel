@@ -45,11 +45,9 @@ pip install -r requirements.txt
 ```
 
 **4. Setup the Dataset**
-- Download the RAVDESS dataset.
-- Unzip the `Audio_Speech_Actors_01-24.zip` file.
-- Download the RAVDESS song dataset.
-- Unzip the `Audio_Speech_01-24.zip` file.
-- Place the unzipped folders inside a `datasets` directory in the root of the project.
+- Download the RAVDESS speech and song datasets.
+- Unzip both the files.
+- Place the unzipped folders inside a `datasets` directory in the root of the project as `audio_song_actors_01-24` and `audio_speech_actors_01-24`
 
 ## Usage
 
