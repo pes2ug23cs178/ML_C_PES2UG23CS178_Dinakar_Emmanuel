@@ -54,6 +54,7 @@ pip install -r requirements.txt
 The project is divided into three main steps: feature extraction, model training, and running the UI.
 
 **Step 1: Generate Features**
+*NOTE: MAKE SURE TO CHANGE THE DIRECTORY PATH IN THE CODE*
 Run the feature generation script. This will process the raw audio files and create the `.npy` feature files needed for training.
 ```bash
 python3 feature_extraction_augmentation.py
