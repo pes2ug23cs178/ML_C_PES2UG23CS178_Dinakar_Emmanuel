@@ -28,50 +28,8 @@ You can download the datasets from https://www.kaggle.com/datasets/uwrfkaggler/r
 
 ## Installation and Setup
 
-Follow these steps to set up the project environment.
-**1. Clone the Repository and go to the folder**
-
-**2. Create a Python Virtual Environment**
-It's highly recommended to use a virtual environment.
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-```
-
-**3. Install Dependencies**
-Install all the required libraries using the `requirements.txt` file.
-```bash
-pip install -r requirements.txt
-```
-
-**4. Setup the Dataset**
-- Download the RAVDESS speech and song datasets.
-- Unzip both the files.
-- Place the unzipped folders inside a `datasets` directory in the root of the project as `audio_song_actors_01-24` and `audio_speech_actors_01-24`
-
 ## Usage
 
-The project is divided into three main steps: feature extraction, model training, and running the UI.
-
-**Step 1: Generate Features**
-*NOTE: MAKE SURE TO CHANGE THE DIRECTORY PATH IN THE CODE*
-Run the feature generation script. This will process the raw audio files and create the `.npy` feature files needed for training.
-```bash
-python3 feature_extraction_augmentation.py
-```
-
-**Step 2: Train a Model**
-Choose one of the training scripts to run. For example, to train the 1D CNN model:
-Go to the cnn.ipynb and run the latest code in the notebook. 
-
-This will train the model and save the final `.h5` model file, along with the `scaler.pkl` and `encoder_classes.npy` files required for the UI.
-
-**Step 3: Launch the UI**
-Make sure the latest `.h5`, `.pkl`, and `.npy` files are in the same directory as `app.py`. Then, run the following command:
-```bash
-streamlit run app.py
-```
-This will open a web page in your browser where you can upload a `.wav` file and test the model.
 
 ## Technologies Used
 
