@@ -35,7 +35,6 @@ You can download the datasets from https://www.kaggle.com/datasets/uwrfkaggler/r
 
 - **Python 3.x**
 - **TensorFlow / Keras:** For building and training deep learning models.
-- **Streamlit:** For creating the interactive web UI.
 - **Librosa:** For audio processing and feature extraction.
 - **Scikit-learn:** For data preprocessing (scaling, encoding) and evaluation metrics.
 - **NumPy & Pandas:** For data manipulation.
