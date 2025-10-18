@@ -12,6 +12,7 @@ A project to classify human emotions from audio speech signals using various dee
     - 1D Convolutional Neural Networks (CNN)
     - Long Short-Term Memory (LSTM) networks
     - Hybrid CNN-LSTM models
+    - Hybrid 1D-2D CNN
 - **Speaker-Independent Evaluation:** Utilizes a strict actor-independent train/test split to ensure the model generalises to unseen speakers.
 - **Web UI:** A simple web application built with Streamlit for uploading an audio file and getting a real-time emotion prediction.
 
@@ -27,8 +28,24 @@ The project uses the **Ryerson Audio-Visual Database of Emotional Speech and Son
 You can download the datasets from https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio and https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-song-audio.
 
 ## Installation and Setup
+Clone this repository.<br>
+To access the best performing model, navigate to the ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment
+/hybrid_model directory. Run these commands.<br>
+`python -m venv ser`<br>
+`source ser/bin/activate`<br>
+`pip install -r requirements.txt`<br>
+The notebook that defines the model is named `final_1d-2d-cnn.ipynb`. To include the datasets that we worked on, add this code cell at the top of the notebook:<br>
+```
+import kagglehub
+uwrfkaggler_ravdess_emotional_speech_audio_path = kagglehub.dataset_download('uwrfkaggler/ravdess-emotional-speech-audio')
+uwrfkaggler_ravdess_emotional_song_audio_path = kagglehub.dataset_download('uwrfkaggler/ravdess-emotional-song-audio')
+
+print(f'{uwrfkaggler_ravdess_emotional_speech_audio_path}\n{uwrfkaggler_ravdess_emotional_song_audio_path}')
+```
 
 ## Usage
+- The notebook defines file paths specific to the Kaggle environment, where this notebook was created. Change the file paths to point to where the files exist in your environment.
+- Run the code cells of the notebook.
 
 
 ## Technologies Used
