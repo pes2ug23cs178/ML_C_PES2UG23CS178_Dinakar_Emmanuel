@@ -31,9 +31,11 @@ You can download the datasets from https://www.kaggle.com/datasets/uwrfkaggler/r
 Clone this repository.<br>
 To access the best performing model, navigate to the ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment
 /hybrid_model/ directory. Run these commands.<br>
-`python -m venv ser`<br>
-`source ser/bin/activate`<br>
-`pip install -r requirements.txt`<br>
+```sh
+python -m venv ser
+source ser/bin/activate
+pip install -r requirements.txt
+```
 The notebook that defines the model is named `final_1d-2d-cnn.ipynb`. To include the datasets that we worked on, add this code cell at the top of the notebook:<br>
 ```
 import kagglehub
@@ -49,16 +51,18 @@ print(f'{uwrfkaggler_ravdess_emotional_speech_audio_path}\n{uwrfkaggler_ravdess_
 
 If you do not wish to run the entire notebook, the saved outputs of the model training section are available.<br>
 - Saved model files: `song_rec_model.h5` (zipped file in ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment/hybrid_model/), `speech_rec_model.h5` (zipped file stored in Releases/v1.0.0/ due to its large size)
-- Scaler and label encoder files:<br>
-  ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment/hybrid_model<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;\\_ song_pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ label_encoder_song.pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ scaler_1d_song.pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ scaler_2d_song.pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_label_encoder.pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_scaler_1d.pkl<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_scaler_2d.pkl<br>
+- Scaler and label encoder files:
+```
+ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment/hybrid_model/
+├── song_pkl/
+│   ├── label_encoder_song.pkl
+│   ├── scaler_1d_song.pkl
+│   └── scaler_2d_song.pkl
+└── speech_pkl/
+    ├── speech_label_encoder.pkl
+    ├── speech_scaler_1d.pkl
+    └── speech_scaler_2d.pkl
+```
 Load the h5 and pkl files in the third section of notebook (prediction)
 
 ## Technologies Used
