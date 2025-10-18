@@ -30,7 +30,7 @@ You can download the datasets from https://www.kaggle.com/datasets/uwrfkaggler/r
 ## Installation and Setup
 Clone this repository.<br>
 To access the best performing model, navigate to the ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment
-/hybrid_model directory. Run these commands.<br>
+/hybrid_model/ directory. Run these commands.<br>
 `python -m venv ser`<br>
 `source ser/bin/activate`<br>
 `pip install -r requirements.txt`<br>
@@ -45,8 +45,10 @@ print(f'{uwrfkaggler_ravdess_emotional_speech_audio_path}\n{uwrfkaggler_ravdess_
 
 ## Usage
 - The notebook defines file paths specific to the Kaggle environment, where this notebook was created. Change the file paths to point to where the files exist in your environment.
-- Run the code cells of the notebook.
-
+- Run all the code cells of the notebook.
+If you do not wish to run the entire notebook, the saved outputs of the model training section are available.<br>
+Saved model files: `song_rec_model.h5` (zipped file in ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment
+/hybrid_model/), `speech_rec_model.h5` (zipped file stored in Releases/v1.0.0/ due to its large size)
 
 ## Technologies Used
 
