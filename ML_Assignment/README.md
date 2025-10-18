@@ -46,12 +46,22 @@ print(f'{uwrfkaggler_ravdess_emotional_speech_audio_path}\n{uwrfkaggler_ravdess_
 ## Usage
 - The notebook defines file paths specific to the Kaggle environment, where this notebook was created. Change the file paths to point to where the files exist in your environment.
 - Run all the code cells of the notebook.
+
 If you do not wish to run the entire notebook, the saved outputs of the model training section are available.<br>
-Saved model files: `song_rec_model.h5` (zipped file in ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment
-/hybrid_model/), `speech_rec_model.h5` (zipped file stored in Releases/v1.0.0/ due to its large size)
+- Saved model files: `song_rec_model.h5` (zipped file in ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment/hybrid_model/), `speech_rec_model.h5` (zipped file stored in Releases/v1.0.0/ due to its large size)
+- Scaler and label encoder files:<br>
+  ML_C_PES2UG23CS178_Dinakar_Emmanuel/ML_Assignment/hybrid_model<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;\\_ song_pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ label_encoder_song.pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ scaler_1d_song.pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ scaler_2d_song.pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_label_encoder.pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_scaler_1d.pkl<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_ speech_scaler_2d.pkl<br>
+Load the h5 and pkl files in the third section of notebook (prediction)
 
 ## Technologies Used
-
 - **Python 3.x**
 - **TensorFlow / Keras:** For building and training deep learning models.
 - **Librosa:** For audio processing and feature extraction.
