@@ -1,0 +1,16 @@
+kagglehub
+pandas
+numpy
+os
+sys
+librosa
+seaborn
+matplotlib
+sklearn
+IPython
+multiprocessing
+timeit
+tqdm
+tensorflow
+gradio
+pickle
