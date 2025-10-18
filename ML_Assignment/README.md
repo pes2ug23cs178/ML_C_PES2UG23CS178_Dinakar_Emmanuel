@@ -20,7 +20,7 @@ A project to classify human emotions from audio speech signals using various dee
 
 The project uses the **Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)**.
 
-- **Total Files:** 1,440 speech files (+1,012 song files, if used).
+- **Total Files:** 1,440 speech files and 1,012 song files.
 - **Actors:** 24 professional actors (12 male, 12 female).
 - **Emotions (8):** Neutral, Calm, Happy, Sad, Angry, Fearful, Disgust, Surprised.
 - **Train/Test Split:** A speaker-independent split was used, with 20 actors for training and 4 actors for testing.
@@ -36,7 +36,7 @@ python -m venv ser
 source ser/bin/activate
 pip install -r requirements.txt
 ```
-The notebook that defines the model is named `final_1d-2d-cnn.ipynb`. To include the datasets that we worked on, add this code cell at the top of the notebook:<br>
+The notebook that defines the model is named `final_1d-2d-cnn.ipynb`. To include the datasets that we worked on (if not done already), add this code cell at the top of the notebook:
 ```
 import kagglehub
 uwrfkaggler_ravdess_emotional_speech_audio_path = kagglehub.dataset_download('uwrfkaggler/ravdess-emotional-speech-audio')
